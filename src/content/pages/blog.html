@@ -12,9 +12,13 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
 {% endblock %}
 
 {% block body %}
+
+
     <!-- ============================================ -->
     <!--                    LANDING                   -->
     <!-- ============================================ -->
@@ -22,9 +26,9 @@ eleventyNavigation:
     <section id="int-hero">
         <h1 id="home-h">Blog</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/blog.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/blog.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/blog.jpg" alt="journal" loading="eager" width="2500" height="1667">
         </picture>
     </section>
 
@@ -85,4 +89,5 @@ eleventyNavigation:
 
         {% include 'components/featured-post.html' %}
     </div>
+    
 {% endblock %}

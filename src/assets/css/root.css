@@ -5,13 +5,15 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
+    --primary: #095ef1;
+    --primaryLight: #1b6cf8;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -374,6 +376,7 @@
     left: auto;
     right: 0;
     opacity: 0;
+    visibility: hidden;
     transform: scaleX(0);
     background-color: #fff;
     height: 100vh;
@@ -479,6 +482,7 @@
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     opacity: 1;
+    visibility: visible;
     transform: scaleX(1);
     transition-delay: 0.2s;
   }
@@ -538,7 +542,7 @@
     border: none;
     background-color: transparent;
     font-family: inherit;
-    font-size: inherit;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     cursor: pointer;
     appearance: none;
   }
