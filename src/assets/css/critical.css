@@ -294,5 +294,72 @@
     color: #fff;
   }
 }
+/* Interests Section */
+.interests {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.interests__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.interest__card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interest__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.interest__icon {
+  font-size: 3rem;
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.interest__title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.interest__description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  .interest__icon {
+    font-size: 2.5rem;
+  }
+  .interest__title {
+    font-size: 1.25rem;
+  }
+  .interest__description {
+    font-size: 0.9rem;
+  }
+}
 
 /*# sourceMappingURL=critical.css.map */
