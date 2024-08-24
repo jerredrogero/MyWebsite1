@@ -83,7 +83,7 @@ eleventyNavigation:
 
             <div class="about__container bd-grid">
                 <div class="about__img">
-                    <img src="assets/images/Jerred1.jpeg" alt="Jerred Rogero">
+                    <img src="assets/images/Jerred2.jpeg" alt="Jerred Rogero">
                 </div>
 
                 <div>
@@ -138,31 +138,32 @@ eleventyNavigation:
 <br>
 
         <!--===== CONTACT =====-->
-        <section class="contact section" id="contact">
-            <h2 class="section-title">Contact</h2>
-
-            <div class="contact__container bd-grid">
-                <div class="contact__info">
-                    <h3 class="contact__subtitle">EMAIL</h3>
-                    <span class="contact__text">Me@Jerredr.com</span>
-
-                    <h3 class="contact__subtitle">LOCATION</h3>
-                    <span class="contact__text">Athens, GA</span>
-                </div>
-
-                <form action="#" class="contact__form">
-                    <div class="contact__inputs">
-                        <input type="text" placeholder="Name" class="contact__input" required>
-                        <input type="email" placeholder="Email" class="contact__input" required>
+        <form name="contact" netlify>
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+    
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">Me@Jerredr.com</span>
+    
+                        <h3 class="contact__subtitle">LOCATION</h3>
+                        <span class="contact__text">Athens, GA</span>
                     </div>
-
-                    <textarea placeholder="Message" cols="0" rows="7" class="contact__input" required></textarea>
-
-                    <input type="submit" value="Send" class="contact__button">
-                </form>
-            </div>
-        </section>
-    </main>
+    
+                    <form action="#" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Name" class="contact__input" required>
+                            <input type="email" placeholder="Email" class="contact__input" required>
+                        </div>
+    
+                        <textarea placeholder="Message" cols="0" rows="7" class="contact__input" required></textarea>
+    
+                        <input type="submit" value="Send" class="contact__button">
+                    </form>
+                </div>
+            </section>    
+        </form>
 
     <!--===== FOOTER =====-->
     <footer class="footer section">
