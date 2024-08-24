@@ -138,32 +138,30 @@ eleventyNavigation:
 <br>
 
         <!--===== CONTACT =====-->
-        <form name="contact" netlify>
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-    
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">Me@Jerredr.com</span>
-    
-                        <h3 class="contact__subtitle">LOCATION</h3>
-                        <span class="contact__text">Athens, GA</span>
-                    </div>
-                    <br>
-                    <form action="#" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input" required>
-                            <input type="email" placeholder="Email" class="contact__input" required>
-                        </div>
-    
-                        <textarea placeholder="Message" cols="0" rows="7" class="contact__input" required></textarea>
-    
-                        <input type="submit" value="Send" class="contact__button">
-                    </form>
-                </div>
-            </section>
-          </form>
+<section class="contact section" id="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact__container bd-grid">
+        <div class="contact__info">
+            <h3 class="contact__subtitle">EMAIL</h3>
+            <span class="contact__text">Me@Jerredr.com</span>
+
+            <h3 class="contact__subtitle">LOCATION</h3>
+            <span class="contact__text">Athens, GA</span>
+        </div>
+        <br>
+        <form name="contact" method="POST" data-netlify="true" class="contact__form">
+            <div class="contact__inputs">
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+            </div>
+
+            <textarea name="message" placeholder="Message" cols="0" rows="7" class="contact__input" required></textarea>
+
+            <button type="submit" class="contact__button">Send</button>
+        </form>
+    </div>
+</section>
         
     </main>
 
